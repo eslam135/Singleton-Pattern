@@ -5,9 +5,9 @@
 
 ### <span style="color:lightgrey">The Singleton Pattern is a creational design pattern that ensures that only one instance of a class is created throughout the lifetime of an application. It provides a global point of access to the same instance of an object.
 
-### In the code provided, the `Leaderboard` class is a Singleton class. It has a private constructor, which prevents the creation of new instances of the class from outside the class. The class also has a private static instance variable `instance`, which is the single instance of the `Leaderboard` class that is shared across the entire application.
+### In our code, the Leaderboard class is a Singleton class. It has a private constructor, which prevents the creation of new instances of the class from outside the class. The class also has a private static instance variable instance, which is the single instance of the Leaderboard class that is shared across the entire application.
 
-### The `getInstance()` method is a static method that returns the single instance of the `Leaderboard` class. If the `instance` variable is `null`, it creates a new instance of the `Leaderboard` class and assigns it to the `instance` variable. If the `instance` variable is not `null`, it simply returns the existing instance.
+### The getInstance() method is a static method that returns the single instance of the Leaderboard class. If the instance variable is null, it creates a new instance of the Leaderboard class and assigns it to the instance variable. If the instance variable is not null, it simply returns the existing instance.
 
 ## <span style="color:pink">Why is it used?</span>
 
@@ -22,10 +22,10 @@ Create a private constructor for the class to prevent the creation of new instan
 Create a private static instance variable for the class to store the single instance of the class.
 
 ### <span style="color:lightgrey">3- Create a static method to access the single instance:
-Create a public static method that returns the single instance of the class. If the instance variable is `null`, create a new instance of the class and assign it to the instance variable. If the instance variable is not `null`, simply return the existing instance.
+Create a public static method that returns the single instance of the class. If the instance variable is null, create a new instance of the class and assign it to the instance variable. If the instance variable is not null, simply return the existing instance.
 
 ### <span style="color:lightgrey">4- Use the single instance:
-Use the single instance of the class as required by the application. In the code provided, the `addScore()` method is used to add scores to the leaderboard, and the `toString()` method is used to get a string representation of the leaderboard.
+Use the single instance of the class as required by the application. In the code provided, the addScore() method is used to add scores to the leaderboard, and the toString() method is used to get a string representation of the leaderboard.
 
 ## <span style="color:pink">Why is it considered a code smell in most cases?</span>
 
