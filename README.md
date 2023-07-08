@@ -36,3 +36,6 @@ Use the single instance of the class as required by the application. In the code
 ### In addition, the Singleton Pattern makes it harder to test and maintain code because it creates a global state that is shared across the entire application. This global state can introduce unexpected dependencies between different parts of the code, making it harder to reason about and test individual components in isolation.
 
 ### Instead of using the Singleton Pattern, it is often better to use Dependency Injection (DI) to provide objects with the resources they need to function properly. DI separates the concerns of object creation and object usage, making it easier to test and maintain code. It also makes it easier to swap out different implementations of a resource, such as a database connection or a configuration file, without modifying the client code.
+
+# Next Patter:
+https://github.com/eslam135/Command-Pattern
